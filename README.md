@@ -2,19 +2,6 @@
 
 A simple native reconnecting websocket client for Vue.js.
 
-### Some important information
-
-### TLDR 
-This package is under development, and I'm still learning how maintaining and and publishing npm packages work. If you have more experience in building and maintaining javascript modules, I'd love to hear from you.
-
-#### The slightly longer version
-
-This is based on a simple websocket plugin that I wrote for my projects, which I am now releasing as a Vue.js plugin. 
-
-This is also a personal project to learn how to build and publish packages on npm. I have deliberately started with a repository from the ground up (instead of going with a template starter) in order to get my hands dirty setting up various components such as `babel`, `rollup` as well as tests using `jest`. As you can probably tell, there is a fair bit of work that needs to be done in order to make this package robust and maintainable.
-
-I'd be super grateful to get pointers from folks who have more experience building and maintaining packages on npm. :)
-
 # Install
 
 ```
@@ -50,6 +37,8 @@ In your components, you can handle websocket events by setting them up in the `c
 - `onMessage` — event when socket receives a message
 - `onClose` — event when socket is closed
 - `onError` — event when socket is closed abnormally
+
+If the connection is broken, the event handlers will continue to work when reconnection succeeds.
 
 ```js
 // Component.vue
@@ -94,6 +83,19 @@ let data = {
 }
 this.$socketClient.sendObj(data)
 ```
+
+### Some important information
+
+### TLDR 
+This package is under development, and I'm still learning how maintaining and and publishing npm packages work. If you have more experience in building and maintaining javascript modules, I'd love to hear from you.
+
+#### The slightly longer version
+
+This is based on a simple websocket plugin that I wrote for my projects, which I am now releasing as a Vue.js plugin. 
+
+This is also a personal project to learn how to build and publish packages on npm. I have deliberately started with a repository from the ground up (instead of going with a template starter) in order to get my hands dirty setting up various components such as `babel`, `rollup` as well as tests using `jest`. As you can probably tell, there is a fair bit of work that needs to be done in order to make this package robust and maintainable.
+
+I'd be super grateful to get pointers from folks who have more experience building and maintaining packages on npm. :)
 
 
 
