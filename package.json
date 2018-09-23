@@ -1,13 +1,13 @@
 {
   "name": "vue-simple-websocket",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple native reconnecting websocket for Vue.js",
   "main": "dist/VueSimpleWebSocket.js",
   "module": "dist/VueSimpleWebSocket.module.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "NODE_ENV=production rollup -c",
-    "test": "NODE_ENV=test jest",
+    "test": "NODE_ENV=test jest"
   },
   "keywords": [
     "Vue.js",
