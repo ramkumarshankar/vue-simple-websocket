@@ -13,7 +13,7 @@ This is based on a simple websocket plugin that I wrote for my projects, which I
 
 This is also a personal project to learn how to build and publish packages on npm. I have deliberately started with a repository from the ground up (instead of going with a template starter) in order to get my hands dirty setting up various components such as `babel`, `rollup` as well as tests using `jest`. As you can probably tell, there is a fair bit of work that needs to be done in order to make this package robust and maintainable.
 
-I'll be super grateful to get pointers from folks who have more experience building and maintaining packages on npm.
+I'd be super grateful to get pointers from folks who have more experience building and maintaining packages on npm. :)
 
 # Install
 
