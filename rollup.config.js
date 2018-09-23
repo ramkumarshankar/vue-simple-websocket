@@ -1,5 +1,5 @@
 export default {
-  input: 'src/index.js',
+  input: 'src/Main.js',
   output: {
     file: 'dist/build.js',
     name: 'VueSimpleWebSocket',
