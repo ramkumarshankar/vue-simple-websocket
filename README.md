@@ -4,7 +4,7 @@ A simple native reconnecting websocket client for Vue.js.
 
 ### Some important information
 
-#### TLDR 
+### TLDR 
 This package is under development, and I'm still learning how maintaining and and publishing npm packages work. If you have more experience in building and maintaining javascript modules, I'd love to hear from you.
 
 #### The slightly longer version
