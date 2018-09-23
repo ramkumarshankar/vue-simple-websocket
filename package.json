@@ -6,8 +6,8 @@
   "module": "dist/VueSimpleWebSocket.module.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "test": "NODE_ENV=test jest"
+    "build": "NODE_ENV=production rollup -c",
+    "test": "NODE_ENV=test jest",
   },
   "keywords": [
     "Vue.js",
@@ -22,9 +22,11 @@
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-minify": "^0.5.0-alpha.3cc09dcf",
     "eslint": "^5.6.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
@@ -34,6 +36,8 @@
     "jest": "^23.6.0",
     "mock-socket": "^8.0.2",
     "rollup": "^0.66.2",
+    "rollup-plugin-babel": "^4.0.1",
+    "rollup-plugin-babel-minify": "^6.0.0",
     "vue": "^2.5.17"
   },
   "dependencies": {}

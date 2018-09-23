@@ -1,8 +1,17 @@
 {
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ],
+    "minify"
+  ],
   "env": {
     "test": {
       "plugins": [
-        "transform-es2015-modules-commonjs"
+        "@babel/plugin-transform-modules-commonjs"
       ]
     }
   }
