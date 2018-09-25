@@ -1,9 +1,11 @@
 {
   "name": "vue-simple-websocket",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple native reconnecting websocket for Vue.js",
   "main": "dist/VueSimpleWebSocket.js",
   "module": "dist/VueSimpleWebSocket.module.js",
+  "homepage": "https://github.com/ramkumarshankar/vue-simple-websocket#readme",
+  "repository": "github:ramkumarshankar/vue-simple-websocket",
   "scripts": {
     "clean": "rimraf dist",
     "build": "NODE_ENV=production rollup -c",
