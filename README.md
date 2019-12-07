@@ -2,6 +2,10 @@
 
 A simple native reconnecting websocket client for Vue.js.
 
+__If you like or use this project, please consider supporting my work. Thanks! 🙏🏼__
+
+<a href="https://www.buymeacoffee.com/ramkumarshankar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-black.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
 # Install
 
 ```
