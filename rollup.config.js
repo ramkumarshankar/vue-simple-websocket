@@ -1,5 +1,5 @@
-import babel from 'rollup-plugin-babel'
-import minify from 'rollup-plugin-babel-minify'
+import { babel } from '@rollup/plugin-babel';
+import { terser } from "rollup-plugin-terser";
 
 export default [
   {
@@ -14,7 +14,7 @@ export default [
       babel({
         exclude: 'node_modules/**'
       }),
-      minify({})
+      terser()
     ]
   },
   {
@@ -29,7 +29,7 @@ export default [
       babel({
         exclude: 'node_modules/**'
       }),
-      minify({})
+      terser()
     ]
   }
 ]

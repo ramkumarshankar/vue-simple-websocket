@@ -1,10 +1,10 @@
 module.exports = {
-    "extends": "standard",
+    "extends": [
+        "prettier"
+    ],
     "parser": "babel-eslint",
     "env": {
         "browser": true,
     },
-    "plugins": [
-        "standard"
-    ]
+    "plugins": []
 };

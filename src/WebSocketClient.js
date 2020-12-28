@@ -1,5 +1,6 @@
 export default class WebSocketClient {
-  constructor (url, options) {
+  constructor(url, options) {
+    console.log(url, options);
     this.instance = null
     this.url = url
     this.options = options || this.defaultOptions()
@@ -16,14 +17,14 @@ export default class WebSocketClient {
     this.onError = null
   }
 
-  defaultOptions () {
+  defaultOptions() {
     return {
       reconnectEnabled: false,
       reconnectInterval: 0
     }
   }
 
-  connect () {
+  connect() {
     this.instance = new WebSocket(this.url)
 
     // Socket event listeners
@@ -53,18 +54,22 @@ export default class WebSocketClient {
     }
   }
 
-  reconnect () {
+  reconnect() {
     delete this.instance
     setTimeout(() => {
       this.connect()
     }, this.reconnectInterval)
   }
 
-  sendObj (data) {
+  send(message) {
+    this.instance.send(message);
+  }
+
+  sendObj(data) {
     this.instance.send(JSON.stringify(data))
   }
 
-  removeListeners () {
+  removeListeners() {
     this.onOpen = null
     this.onMessage = null
     this.onClose = null
