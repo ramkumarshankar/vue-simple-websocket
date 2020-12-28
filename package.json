@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-websocket",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A simple native reconnecting websocket for Vue.js",
   "main": "dist/VueSimpleWebSocket.js",
   "module": "dist/VueSimpleWebSocket.module.js",
